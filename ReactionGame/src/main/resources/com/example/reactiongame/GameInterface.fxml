@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: mediumpurple; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.reactiongame.GameInterfaceController">
+    <children>
+        <Button fx:id="buttonPlayerOne" alignment="CENTER" contentDisplay="CENTER" disable="true" layoutX="58.0" layoutY="247.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#actionPlayerOne" prefHeight="60.0" prefWidth="180.0" snapToPixel="false" style="-fx-background-color: blue; -fx-border-color: white; -fx-border-width: 3px;" text="Player 1" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Monospaced Bold" size="18.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="buttonPlayerTwo" alignment="CENTER" contentDisplay="CENTER" disable="true" layoutX="359.0" layoutY="247.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#actionPlayerTwo" prefHeight="60.0" prefWidth="180.0" snapToPixel="false" style="-fx-background-color: tomato; -fx-border-color: white; -fx-border-width: 3px;" text="Player 2" textAlignment="CENTER" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="Monospaced Bold" size="18.0" />
+            </font>
+        </Button>
+        <Label fx:id="labelField" alignment="CENTER" cacheShape="false" layoutX="171.0" layoutY="90.0" prefHeight="54.0" prefWidth="258.0" style="-fx-border-color: white; -fx-border-width: 3px;" text="Clique em Start!" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Monospaced Bold" size="20.0" />
+            </font>
+        </Label>
+        <Button fx:id="buttonStart" alignment="CENTER" layoutX="267.0" layoutY="333.0" mnemonicParsing="false" onAction="#actionStart" style="-fx-background-color: mediumpurple; -fx-border-width: 2; -fx-border-color: white;" text="Start" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Monospaced Bold" size="14.0" />
+            </font>
+        </Button>
+      <Label fx:id="labelPlacarOne" alignment="CENTER" layoutX="263.0" layoutY="161.0" prefHeight="22.0" prefWidth="74.0" style="-fx-border-width: 2px; -fx-border-color: white;" text="Placar 1" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPlacarTwo" alignment="CENTER" layoutX="263.0" layoutY="189.0" prefHeight="22.0" prefWidth="74.0" style="-fx-border-width: 2px; -fx-border-color: white;" text="Placar 2" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPlacarThree" alignment="CENTER" layoutX="263.0" layoutY="217.0" prefHeight="22.0" prefWidth="74.0" style="-fx-border-width: 2px; -fx-border-color: white;" text="Placar 3" textFill="WHITE">
+         <font>
+            <Font name="Monospaced Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelColorOne" layoutX="58.0" layoutY="209.0" prefHeight="17.0" prefWidth="180.0" style="-fx-border-color: white; -fx-border-width: 3px;" />
+      <Label fx:id="labelColorTwo" layoutX="359.0" layoutY="209.0" prefHeight="17.0" prefWidth="180.0" style="-fx-border-color: white; -fx-border-width: 3px;" />
+    </children>
+</Pane>
